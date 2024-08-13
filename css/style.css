@@ -231,6 +231,7 @@ a{
 
 .classic-list .card{
 	text-align: center;
+	margin-bottom: 80px;
 }
 
 .classic h3{
@@ -252,16 +253,85 @@ a{
 	font-weight: 900;
 	color: #AA0601;
 	text-align: center;
-	margin-bottom: 80px;
 }
 
-@media(max-width:922){
+@media(max-width:922px){
 	.classic-list .column{
+		width: 360px;
+		margin-left: -12px;
+		margin-right: -12px;
+	}
+    .classic-list{
+		flex-wrap: wrap;
+		flex-direction: column;
+		align-items: center;
 		width: 100%;
+		
 	}
 
 	.classic img{
 		max-width: 336px;
+	}
+
+	.classic .card{
+		margin-bottom: 24px;
+		text-align: center;
+	}
+}
+
+@media(max-width:576px){
+	.classic img{
+		max-width: 348px;
+	}
+}
+
+.cobrand{
+	background-image: url(../img/index-bg.png);
+	background-size: cover;
+}
+
+
+.cobrand .card{
+	margin-bottom: 80px;
+}
+
+.cobrand h3{
+	font-size: 48px;
+	color: #FFFFFF;
+	font-weight: bold;
+	padding-top: 80px;
+	padding-bottom: 48px;
+	text-align: center;
+}
+
+.cobrand img{
+	max-width: 648px;
+}
+
+.cobrand h5{
+	font-size: 48px;
+	font-weight: 900;
+	color: #AA0601;
+	background-color: #FFFFFF;
+	padding: 8px 0;
+	text-align: center;
+}
+
+@media(max-width:922px){
+	.cobrand-list{
+		flex-wrap: wrap;
+		flex-direction: column;
+		width: 100%;
+		align-items: center;
+	}
+
+	.cobrand{
+		background-image: url(../img/index-bg-md.png);
+		background-size: cover;
+	}
+
+	.cobrand img{
+		background-position: center;
 	}
 }
 
