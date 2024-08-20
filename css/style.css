@@ -255,18 +255,16 @@ a{
 	text-align: center;
 }
 
-@media(max-width:922px){
+@media(max-width:992px){
 	.classic-list .column{
 		width: 360px;
-		margin-left: -12px;
-		margin-right: -12px;
 	}
     .classic-list{
 		flex-wrap: wrap;
 		flex-direction: column;
 		align-items: center;
 		width: 100%;
-		
+		padding-bottom: 80px;
 	}
 
 	.classic img{
@@ -291,8 +289,8 @@ a{
 }
 
 
-.cobrand .card{
-	margin-bottom: 80px;
+.cobrand-list{
+	padding-bottom: 80px;
 }
 
 .cobrand h3{
@@ -304,11 +302,24 @@ a{
 	text-align: center;
 }
 
-.cobrand img{
+.cobrand-list .cobrand-card{
 	max-width: 648px;
 }
 
+.card-img4-1{
+	height: 240px;
+	background-image: url(../img/home-section4-1.png);
+	background-size: cover;
+}
+
+.card-img4-2{
+	height: 240px;
+	background-image: url(../img/home-section4-2.png);
+	background-size: cover;
+}
+
 .cobrand h5{
+	width: 648px;
 	font-size: 48px;
 	font-weight: 900;
 	color: #AA0601;
@@ -317,7 +328,7 @@ a{
 	text-align: center;
 }
 
-@media(max-width:922px){
+@media(max-width:992px){
 	.cobrand-list{
 		flex-wrap: wrap;
 		flex-direction: column;
@@ -330,8 +341,103 @@ a{
 		background-size: cover;
 	}
 
-	.cobrand img{
-		background-position: center;
+    .cobrand-card{
+		padding-bottom: 24px;
+		max-width: 696px;
+	}
+}
+
+@media(max-width:576px){
+	.cobrand{
+		background-image: url(../img/index-bg-sm.png);
+		background-size: cover;
+	}
+
+	.cobrand-list .cobrand-card{
+		max-width: 348px;
+	}
+
+	.cobrand-list .card-img4-1{
+		background-image: url(../img/home-section4-1-sm.png);
+	}
+
+	.cobrand-list .card-img4-2{
+		background-image: url(../img/home-section4-2-sm.png);
+	}
+
+	.cobrand h5{
+		width: 348px;
+	}
+}
+
+.recommend h3{
+	font-size: 48px;
+	font-weight: bold;
+	color: #650300;
+	padding-top: 80px;
+	padding-bottom: 48px;
+	text-align: center;
+}
+
+.recommend-card{
+	max-width: 306px;
+	padding-bottom: 80px;
+}
+
+.recommend .column{
+	padding-left: 12px;
+	padding-right: 12px;
+}
+
+.recommend-body{
+    padding: 16px;
+}
+
+.recommend-desc h6{
+	font-weight: 500;
+	padding-bottom: 8px;
+}
+
+.recommend-desc p{
+	padding-bottom: 72px;
+}
+
+.recommend-time{
+	color: #707070;
+	font-size: 14px;
+}
+
+@media (max-width:992px){
+	.recommend-list{
+		flex-wrap: wrap;
+		padding-bottom: 80px;
+	}
+
+	.recommend-list .column{
+	    gap: 24px;
+	}
+
+	.recommend-card{
+		max-width: 336px;
+		padding-bottom: 24px;
+	}
+}
+
+@media (max-width:576px){
+	.recommend-list{
+		flex-wrap: wrap;
+		flex-direction: column;
+		width: 100%;
+		align-items: center;
+	}
+
+	.recommend-list .column{
+		margin-bottom: 16px;
+		padding: 0 13px;
+	}
+
+	.recommend-card{
+		max-width: 348px;
 	}
 }
 
