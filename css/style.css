@@ -381,7 +381,7 @@ a{
 
 .recommend-card{
 	max-width: 306px;
-	padding-bottom: 80px;
+	margin-bottom: 80px;
 	border: 1px solid #DEE2E6;
 	border-radius: 4px;
 	box-shadow: 0px 2px 6px #00000029;
@@ -507,6 +507,60 @@ label{
 	background-color: #650300;
 	border: #650300;
 }
+
+@media (max-width:992px){
+	.contact-ad{
+		max-width: 576px;
+		margin: 0 auto;
+	}
+
+	.contact h3{
+		padding-bottom: 24px;
+	}
+
+	.contact p{
+		font-size: 16px;
+	}
+
+	.in-box{
+		max-width: 336px;
+	}
+}
+
+@media (max-width:576px){
+	.contact{
+		padding: 40px 0px;
+	}
+
+	.contact-ad{
+		max-width: 348px;
+	}
+
+	.contact h3{
+		font-size: 24px;
+	}
+
+	.in-box{
+		max-width: 348px;
+	}
+}
+
+.footer{
+	background-color: #AA0601;
+	padding: 48px 0px 32px 0px;
+}
+
+.footer-ad{
+	max-width: 1296px;
+	margin: 0 auto;
+}
+
+.footer-nav{
+	color: #FFFFFF;
+	gap: 48px;
+}
+
+
 
 .d-flex{
 	display: flex;
