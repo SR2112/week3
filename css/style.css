@@ -557,12 +557,29 @@ label{
 }
 
 .footer-nav a{
-	gap: 48px;
+	padding-right: 48px;
+}
+
+.footer-call{
+	
+	padding-bottom: 32px;
+}
+
+.material-symbols-outlined{
+	padding-right: 22px;
 }
 
 .footer-call li{
 	font-size: 48px;
 	padding-bottom: 8px;
+}
+
+
+
+.copyright{
+	border-top: 1px solid #FFFFFF;
+	padding-top: 32px;
+	justify-content: space-between;
 }
 
 .d-flex{
