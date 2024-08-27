@@ -548,19 +548,22 @@ label{
 .footer{
 	background-color: #AA0601;
 	padding: 48px 0px 32px 0px;
+	color: #FFFFFF;
 }
 
 .footer-ad{
-	max-width: 1296px;
-	margin: 0 auto;
+    justify-content: space-between;
+	flex-wrap: wrap;	
 }
 
-.footer-nav{
-	color: #FFFFFF;
+.footer-nav a{
 	gap: 48px;
 }
 
-
+.footer-call li{
+	font-size: 48px;
+	padding-bottom: 8px;
+}
 
 .d-flex{
 	display: flex;
