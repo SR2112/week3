@@ -212,6 +212,11 @@ a{
 }
 
 @media (max-width:576px){
+	.feature-list{
+		padding-right: 14px;
+		padding-left: 13px;
+	}
+
 	.feature .card{
 		width: 100%;
 		margin-bottom: 24px;
@@ -556,30 +561,111 @@ label{
 	flex-wrap: wrap;	
 }
 
-.footer-nav a{
-	padding-right: 48px;
+.footer-nav{
+	padding: 12px 0;
+	gap: 48px;
 }
 
 .footer-call{
-	
 	padding-bottom: 32px;
 }
 
 .material-symbols-outlined{
-	padding-right: 22px;
+	vertical-align: middle;
+	font-size: 48px;
+	padding-right: 20px;
 }
 
 .footer-call li{
-	font-size: 48px;
+	font-size: 36px;
 	padding-bottom: 8px;
 }
 
+.social-list img{
+	width: 48px;
+}
 
+.social-list a{
+	padding-left: 32px;
+}
 
 .copyright{
 	border-top: 1px solid #FFFFFF;
 	padding-top: 32px;
 	justify-content: space-between;
+}
+
+.privacy-list{
+	font-size: 14px;
+}
+
+.privacy-list a{
+	padding-left: 48px;
+}
+
+@media(max-width:992px){
+	.footer{
+		padding: 48px 0px 40px 0px;
+	}
+
+	.social-list a{
+		padding-left: 16px;
+	}
+
+	.social-list img{
+		width: 40px;
+	}
+}
+
+@media(max-width:576px){
+	.footer{
+		padding: 24px 13px 24px 14px;
+	}
+
+    .footer .nav{
+	    display: none;
+    }
+
+	.footer-ad{
+		flex-wrap: nowrap;
+	}
+
+	.footer-call{
+		padding-bottom: 24px;
+	}
+
+	.footer-call li{
+		font-size: 16px;
+	}
+
+	.material-symbols-outlined{
+		font-size: 24px;
+		padding-right: 10px;
+	}
+
+	.social-list img{
+		width: 24px;
+	}
+
+	.social-list a{
+		padding-left: 8px;
+	}
+
+    .copyright{
+        padding-top: 16px;
+		flex-direction: column;
+		flex-wrap: nowrap;
+    }
+
+	.privacy-list{
+		font-size: 16px;
+		flex-direction: column;
+		flex-wrap: nowrap;
+	}
+
+	.privacy-list a{
+		padding-left: 0px;
+	}
 }
 
 .d-flex{
@@ -590,4 +676,3 @@ label{
 	margin-left: -12px;
 	margin-right: -12px;
 }
-
