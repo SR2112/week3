@@ -16,9 +16,10 @@ img{
 	vertical-align: middle;
 }
 
-a{
+a{  color: #FFFFFF;
 	text-decoration: none;
-	display: inline-block;
+	display: block;
+	padding: 8px 32px;
 }
 
 .container{
@@ -54,6 +55,7 @@ a{
 }
 
 .header .logo a{
+	display: inline-block;
 	position: absolute;
 	left: 0;
 	width: 100%;
@@ -61,27 +63,28 @@ a{
 }
 
 .header .nav-item{
-	justify-content: space-between;
+    justify-content: space-between;
 	align-items: center;
-	padding: 8px 32px;
-	cursor: pointer;
+}
+
+.nav-item:hover{
+	background-color: #650300;
 }
 
 @media(max-width: 992px){
 	.container{
 		max-width: 720px;
 	}
+
+	.nav-item:hover{
+		background-color: #650300;
+	}
 }
 
 
 
 @media(max-width: 767px){
-    .container{
-		margin-right: -12px;
-		margin-left: -12px;
-	}
-
-	.header{
+.header{
 		padding: 0;
 	}
 	
@@ -190,10 +193,16 @@ a{
 	width: calc(25% - 18px);
 	height: 100%;
 	margin-bottom: 80px;
+	padding: 0px 12px;
 }
 
 .feature .card-header{
 	text-align: center;
+}
+
+.feature img{
+	max-width: 100px;
+	height: 100px;
 }
 
 .feature h4{
@@ -235,6 +244,7 @@ a{
 }
 
 .classic-list .card{
+	width: 416px;
 	text-align: center;
 	margin-bottom: 80px;
 }
@@ -249,7 +259,6 @@ a{
 }
 
 .classic img{
-	max-width: 416px;
 	padding-bottom: 8px;
 }
 
@@ -272,19 +281,16 @@ a{
 		padding-bottom: 80px;
 	}
 
-	.classic img{
-		max-width: 336px;
-	}
-
-	.classic .card{
+    .classic .card{
+		width: 336px;
 		margin-bottom: 24px;
 		text-align: center;
 	}
 }
 
 @media(max-width:576px){
-	.classic img{
-		max-width: 348px;
+	.classic .card{
+		width: 348px;
 	}
 }
 
@@ -297,6 +303,10 @@ a{
 
 .cobrand-list{
 	padding-bottom: 80px;
+}
+
+.cobrand-list .column{
+	width: 50%;
 }
 
 .cobrand h3{
@@ -327,7 +337,6 @@ a{
 }
 
 .cobrand h5{
-	width: 648px;
 	font-size: 48px;
 	font-weight: 900;
 	color: #AA0601;
@@ -342,16 +351,21 @@ a{
 		flex-direction: column;
 		width: 100%;
 		align-items: center;
+		padding-bottom: 56px;
 	}
 
 	.cobrand{
 		background-image: url(../img/index-bg-md.png);
 		background-size: cover;
 	}
-
+	.cobrand-list .column{
+		width: 100%;
+	}
     .cobrand-card{
-		padding-bottom: 24px;
 		max-width: 696px;
+		margin: 0px 36px;
+		margin-bottom: 24px;
+		text-align: center;
 	}
 }
 
@@ -361,8 +375,23 @@ a{
 		background-size: cover;
 	}
 
+	.cobrand-list{
+		flex-wrap: wrap;
+		flex-direction: column;
+		width: 100%;
+		align-items: center;
+		padding-bottom: 56px;
+	}
+
+	.cobrand-list .column{
+		width: 100%;
+	}
+
 	.cobrand-list .cobrand-card{
 		max-width: 348px;
+		margin: 0px 13px;
+		margin-bottom: 24px;
+		text-align: center;
 	}
 
 	.cobrand-list .card-img4-1{
@@ -372,10 +401,10 @@ a{
 	.cobrand-list .card-img4-2{
 		background-image: url(../img/home-section4-2-sm.png);
 	}
+}
 
-	.cobrand h5{
-		width: 348px;
-	}
+.recommend-list{
+	margin-bottom: 80px;
 }
 
 .recommend h3{
@@ -389,11 +418,9 @@ a{
 
 .recommend-card{
 	max-width: 306px;
-	margin-bottom: 80px;
 	border: 1px solid #DEE2E6;
 	border-radius: 4px;
 	box-shadow: 0px 2px 6px #00000029;
-	height: 100%;
 }
 
 .recommend .column{
@@ -509,6 +536,7 @@ label{
 	font-weight: bold;
 	padding: 16px 0px;
 	border: #AA0601;
+	cursor: pointer;
 }
 
 .contact-btn:hover{
@@ -567,6 +595,10 @@ label{
 .footer-nav{
 	padding: 12px 0;
 	gap: 48px;
+}
+
+.nav-item2:hover{
+	background-color: #650300;
 }
 
 .footer-call{
