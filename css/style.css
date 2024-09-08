@@ -8,6 +8,7 @@
 body{
 	font-family: "Noto Sans TC","Microsoft JhengHei","Roboto","PingFang TC","sans-serif";
 	line-height: 1.5;
+	/*overflow-x: hidden; (不會出現X軸)*/
 }
 
 img{
@@ -244,7 +245,6 @@ a{  color: #FFFFFF;
 }
 
 .classic-list .card{
-	width: 416px;
 	text-align: center;
 	margin-bottom: 80px;
 }
@@ -271,26 +271,27 @@ a{  color: #FFFFFF;
 
 @media(max-width:992px){
 	.classic-list .column{
-		width: 360px;
+		width: 100%;
+        max-width: 360px;
 	}
     .classic-list{
 		flex-wrap: wrap;
 		flex-direction: column;
 		align-items: center;
-		width: 100%;
+	
 		padding-bottom: 80px;
 	}
 
     .classic .card{
-		width: 336px;
 		margin-bottom: 24px;
 		text-align: center;
 	}
 }
 
 @media(max-width:576px){
-	.classic .card{
-		width: 348px;
+	.classic .column{
+		width: 100%;
+		max-width: 372px;
 	}
 }
 
@@ -320,6 +321,7 @@ a{  color: #FFFFFF;
 
 .cobrand-list .cobrand-card{
 	max-width: 648px;
+	margin: 0px auto;
 }
 
 .card-img4-1{
@@ -385,10 +387,11 @@ a{  color: #FFFFFF;
 
 	.cobrand-list .column{
 		width: 100%;
+		max-width: 348px;
 	}
 
 	.cobrand-list .cobrand-card{
-		max-width: 348px;
+		margin: 0px auto;
 		margin: 0px 13px;
 		margin-bottom: 24px;
 		text-align: center;
@@ -652,7 +655,7 @@ label{
 	}
 }
 
-@media(max-width:576px){
+@media(max-width:768px){
 	.footer{
 		padding: 24px 13px 24px 14px;
 	}
@@ -675,7 +678,7 @@ label{
 	}
 
 	.social-list img{
-		width: 24px;
+		width: 18px;
 	}
 
 	.social-list a{
