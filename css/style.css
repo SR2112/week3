@@ -8,7 +8,7 @@
 body{
 	font-family: "Noto Sans TC","Microsoft JhengHei","Roboto","PingFang TC","sans-serif";
 	line-height: 1.5;
-	/*overflow-x: hidden; (不會出現X軸)*/
+	overflow-x: hidden;
 }
 
 img{
@@ -615,8 +615,12 @@ label{
 }
 
 .footer-call li{
-	font-size: 36px;
+	font-size: 30px;
 	padding-bottom: 8px;
+}
+
+.social-list{
+	height: 50px;
 }
 
 .social-list img{
@@ -643,7 +647,11 @@ label{
 
 @media(max-width:992px){
 	.footer{
-		padding: 48px 0px 40px 0px;
+		padding: 48px 36px 40px 36px;
+	}
+	
+	.material-symbols-outlined{
+		font-size: 36px;
 	}
 
 	.social-list a{
@@ -673,12 +681,12 @@ label{
 	}
 
 	.material-symbols-outlined{
-		font-size: 24px;
+		font-size: 18px;
 		padding-right: 10px;
 	}
 
 	.social-list img{
-		width: 18px;
+		width: 24px;
 	}
 
 	.social-list a{
